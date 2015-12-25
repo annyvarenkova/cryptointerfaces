@@ -10,6 +10,6 @@
 	}
 	fprintf(out_data, "%c", (char)size);
 	fwrite(iv, 1, size, out_data);
-	fwrite(ciphertext, 1, cipher_len, out_data); //cipher_len - значение, возвращаемой функцией шифрования
+	fwrite(ciphertext, 1, cipher_len, out_data); //cipher_len - is return with encrypt function
 	fclose(out_data);
 	
